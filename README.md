@@ -33,3 +33,8 @@ To decode an encoded text, use the `Decode()` method:
 let decoded = Base16.Decode("48656c6c6f20576f726c64212c2054686973206973206120746573742e");
 console.log(decoded); // Outputs Hello World!, This is a test.
 ```
+
+# More info
+This algorithm replace each ASCII character with two ASCII characters, therefore there's a double overhead.
+
+In a mathematical language, if the text is `n` bytes in size (or length, doesn't matter because we're using ASCII), then the resultant text will be `2*n` bytes in size, this implies a `100%` increment in size (overhead), unlike Base64 which has approximately `33.333333%` overhead.
