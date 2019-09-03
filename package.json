@@ -1,6 +1,6 @@
 {
   "name": "base16.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Encoding And Decoding Text Using Only 16 Characters",
   "main": "main.js",
   "scripts": {
